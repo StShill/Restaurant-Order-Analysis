@@ -17,6 +17,8 @@ I explore both tables to understand how customers are reacting to the new menu b
 - MIN
 - MAX
 - HAVING
+- ON
+- LEFT JOIIN
 
 
 ### Data Source
@@ -97,11 +99,10 @@ GROUP BY order_id
 HAVING num_items > 12) AS num_items;
 
 11. What were the least and most ordered items? What categories were they in?
-    
-12.What were the top 5 orders that spent the most money?
 
-13. View the details of the highest spend order. Which specific items were purchased?
+- SELECT item_name, COUNT(order_details_id) AS num_purchases
+    FROM order_details od LEFT JOIN menu_items mi
+    ON od.item_id = mi.menu_item_id
+    GROUP BY item_name
+  ORDER BY num_purchases DESC
     
-14. View the details of the top 5 highest spend orders
-    
-21.   ### Data Insights
