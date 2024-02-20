@@ -49,13 +49,17 @@ ORDER BY price ASC;
 WHERE category = 'italian'
 ORDER BY price DESC;
 
+
 5. How many dishes are in each category?
 
 - SELECT category, COUNT(menu_item_id) AS num_dish
 FROM menu_items
 GROUP BY category;
   
-6. What is the average dish price within each category? 
-
+6. What is the average dish price within each category?
+   
+- SELECT category, Avg(price) AS avg_price
+FROM menu_items
+GROUP BY category;
 
 ### Data Insights
