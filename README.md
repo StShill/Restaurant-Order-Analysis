@@ -1,7 +1,8 @@
-# SQL DATA EXPLORATION Restaurant-Order-Analysis
+# SQL DATA EXPLORATION Restaurant-Operations-Analysis
 
 ## Project Overview
-
+In this project I use my analytic tools to explore a restaurant operations by digging into the customer data to see which menu items are doing well/not well and what the top customers seem to like best. 
+I explore both tables to understand how customers are reacting to the new menu based off the data I have queried
 
 ### Queries Used
 - SELECT 
@@ -13,14 +14,16 @@
 - ORDER BY
 - GROUP BY
 - ALIAS
-- 
+
 
 ### Data Source
 - Maven Ananlytics
   
 ### Data Tools
 - MYSQL
-
+### SQL Tables
+- menu_items
+- order_details
 ### Data Exploration 
 1. Find the number of items on the menu?
    
